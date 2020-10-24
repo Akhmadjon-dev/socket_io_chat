@@ -1,6 +1,6 @@
 const io = require("socket.io")(3000);
 
-io.on("connection"),
-  (socket) => {
-    socket.emmit("message", "hello");
-  };
+io.on("connection", (socket) => {
+  console.log("ad");
+  socket.emmit("message", "hello");
+});
